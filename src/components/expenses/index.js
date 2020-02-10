@@ -8,7 +8,7 @@ export default () => {
     return (
         <div>
             <div className="me-div">
-                <img src={expensesImg}/>
+                <img src={expensesImg} alt="Expenses"/>
             </div>
 
             <div className="me-padding">

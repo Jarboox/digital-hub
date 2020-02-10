@@ -1,5 +1,6 @@
 import React from 'react';
 import '../home/home.css';
+import { formatDate } from '../../utils';
 
 function createTable(data) {
     
@@ -9,7 +10,7 @@ function createTable(data) {
         tr.push(<tr>
             <td>{opacityAccount(data[index].account)}</td>
             <td>{data[index].balance.currency + `${data[index].balance.value}`}</td>
-            <td>{data[index].createdAt}</td>
+            <td>{formatDate(data[index].createdAt)}</td>
         </tr>);
     }
 
@@ -41,15 +42,13 @@ export const CurrentTable = (props) => {
 }
 
 function createHistoryTable(data) {
-    
     let tr = [];
-
     for (const index in data) {
-        tr.push(<tr>
+        tr.push(<tr key={index}>
             <td>{opacityAccount(data[index].fromAccount)}</td>
             <td>{data[index].toAccount}</td>
             <td>{data[index].amount.currency + `${data[index].amount.value}`}</td>
-            <td>{data[index].sentAt}</td>
+            <td>{formatDate(data[index].sentAt)}</td>
         </tr>);
     }
 

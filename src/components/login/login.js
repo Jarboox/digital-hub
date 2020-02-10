@@ -20,7 +20,7 @@ class Login extends Component {
   }
 
   _validFields() {
-    const fRegex = /^[a-zA-Z0-9!"$%&/]{8,20}$/;  
+    const fRegex = /^[a-zA-Z0-9!"$%&/]{8,20}$/;
     const numRegex = /\d+/g;
     const upperRegex = /[A-Z]/;
     const lowerRegex = /[a-z]/;

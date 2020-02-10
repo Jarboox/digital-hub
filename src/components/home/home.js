@@ -3,7 +3,7 @@ import './home.css';
 import Expenses from '../expenses';
 import PieChart from '../pieChart';
 import { CurrentTable } from '../table';
-import { currentBalance } from '../../services/api';
+import { currentBalance, transactionHistory } from '../../services/api';
 import { Lorem } from './lorem';
 
 class Home extends Component {
@@ -11,12 +11,20 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      balance: []
+      balance: [],
+      history: []
     }
 
   }
 
   componentDidMount() {
+
+    transactionHistory((data) => {
+      this.setState({
+        history: data
+      });
+    });
+
     currentBalance((data) => {
       this.setState({
         balance: data
@@ -31,7 +39,7 @@ class Home extends Component {
         <div className="row">
           <div className="col"> 
             <div className="me-padding">
-              <PieChart/>
+              <PieChart history={this.state.history}/>
               <h3>Transactions History</h3>
               <Lorem/>
             </div>
