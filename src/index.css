@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.shadow {
+  box-shadow: 1px 3px 3px 0 gray;
+}
+
+.nav {
+  height: 50px;
+  background: #333;
+}
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: gainsboro;
+}
+
+.navigation a:hover {
+  background: black;
+  color: white;
+}
+
+.li-right {
+  position: absolute;
+  right: 40px;
+}
+
+.visible {
+  display: block;
+}
+.no-visible {
+  display: none;
+}

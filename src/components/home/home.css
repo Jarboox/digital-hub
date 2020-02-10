@@ -1,0 +1,49 @@
+.username {
+  text-align: center;
+  color: #CACACA;
+}
+
+.row {
+  display: flex;
+  padding: 20px;
+}
+
+.col {
+  width: 33.33%;
+  margin: 20px;
+  border: #CACACA solid 1px;
+}
+
+.me-padding {
+  padding: 20px;
+}
+
+.me-div {
+  text-align: center;
+}
+
+.me-div img {
+  width: 98%;
+  margin-top: 3px;
+}
+
+.cb-table {
+  font-size: 12px;
+  margin: 10px;
+}
+
+.cb-table table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.cb-table td, th {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+.cb-table h3 {
+  padding-left: 10px;
+}
+
