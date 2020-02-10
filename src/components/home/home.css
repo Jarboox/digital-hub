@@ -3,21 +3,6 @@
   color: #CACACA;
 }
 
-.row {
-  display: flex;
-  padding: 20px;
-}
-
-.col {
-  width: 33.33%;
-  margin: 20px;
-  border: #CACACA solid 1px;
-}
-
-.me-padding {
-  padding: 20px;
-}
-
 .me-div {
   text-align: center;
 }
@@ -28,13 +13,14 @@
 }
 
 .cb-table {
-  font-size: 12px;
   margin: 10px;
 }
 
 .cb-table table {
+  font-size: 12px;
   border-collapse: collapse;
   border-spacing: 0;
+  margin: auto;
 }
 
 .cb-table td, th {
@@ -42,8 +28,3 @@
   text-align: center;
   padding: 8px;
 }
-
-.cb-table h3 {
-  padding-left: 10px;
-}
-

@@ -11,6 +11,7 @@ export const Protected = ({component: Component, ...rest}) => {
                 if (auth.isAuthenticated()) {
                     return <Component {...props} />;
                 } else {
+                    console.log("Fake");
                     return (
                         <Redirect to={{ pathname: "/", state: { fromm: props.location } }} />
                     );

@@ -49,6 +49,32 @@ code {
 .visible {
   display: block;
 }
+
 .no-visible {
   display: none;
+}
+
+.row {
+  display: flex;
+  padding: 20px;
+}
+
+.col {
+  width: 33.33%;
+  margin: 20px;
+  border: #CACACA solid 1px;
+}
+
+.col-6 {
+  width: 50%;
+  margin: 20px;
+  border: #CACACA solid 1px;
+}
+
+.me-padding {
+  padding: 20px;
+}
+
+.padding-left-10 {
+  padding-left: 10px;
 }

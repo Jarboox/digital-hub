@@ -16,7 +16,7 @@ class Routes extends Component {
     }
 
     componentDidMount() {
-        this.props.history.push("/home");
+    
     }
 
     login = (user) => {
